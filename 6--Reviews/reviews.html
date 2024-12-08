@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="reviews.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>       
+        <a href="../1--Home/index.html" class="logo">Virtech</a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../1--Home/index.html">Home</a></li>
+                <li><a href="../3--About/about.html" target="_blank">About</a></li>
+                <li><a href="../2--Products/products.html">Shop</a></li>
+                <li><a href="../7--Contact/contact.html">Contact</a></li>
+                <li><a href="../6--Reviews/reviews.html" class="active">Reviews</a></li>
+                <li><a href="../8--Pricing/pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="../4--Login--5/login.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+            <a href="../2--Products/products.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        
+        
+    </header>
+
+    <section>
+        <div class="profile">
+            <img src="person.jpg" alt="">
+            <h4 class="name">Stephanos</h4>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Lorem, ipsum dolor sit amet conse adipisicing elit. Sequi libero suscipit voluptas fuga magnam iusto!</p>
+        </div>
+
+        <div class="profile">
+            <img src="2.jpg" alt="">
+            <h4 class="name">Amelia</h4>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Lorem, ipsum dolor sit amet conse adipisicing elit. Sequi libero suscipit voluptas fuga magnam iusto!</p>
+        </div>
+
+        <div class="profile">
+            <img src="Untitled-1.jpg" alt="">
+            <h4 class="name">Angelina</h4>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Lorem, ipsum dolor sit amet conse adipisicing elit. Sequi libero suscipit voluptas fuga magnam iusto!</p>
+        </div>
+    </section>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
