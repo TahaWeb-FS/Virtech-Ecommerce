@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Home</title>
 </head>
 <body>
-    hello
+    <header>       
+        <a href="../1--Home/index.html" class="logo">Virtech</a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../1--Home/index.html" class="active">Home</a></li>
+                <li><a href="../3--About/about.html" target="_blank">About</a></li>
+                <li><a href="../2--Products/products.html">Shop</a></li>
+                <li><a href="../7--Contact/contact.html">Contact</a></li>
+                <li><a href="../6--Reviews/reviews.html">Reviews</a></li>
+                <li><a href="../8--Pricing/pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="../4--Login--5/login.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+            <a href="../2--Products/products.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        
+        
+    </header>
+
+    <div class="container">
+        <h1 class="first">  VIRTUAL <br> TECHNOLOGY</h1>
+        <p class="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus harum labore itaque dolore numquam molestias tempora, accusamus voluptatibus alias excepturi ad delectus a incidunt odio molestiae architecto hic illum praesentium consectetur quam neque at? Fugit recusandae, debitis nulla labore laudantium molestiae assumenda minima amet quam sint omnis quisquam!</p>
+        <a href="../2--Products/products.html"><button>Shop now</button></a>
+        <div class="socials">
+            <a href="https://web.facebook.com/taha.lam.12" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/taha_lam/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-taha-lamkhizni-235598325/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
