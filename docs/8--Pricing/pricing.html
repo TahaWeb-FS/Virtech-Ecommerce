@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>       
+        <a href="../1--Home/index.html" class="logo">Virtech</a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../1--Home/index.html">Home</a></li>
+                <li><a href="../3--About/about.html" target="_blank">About</a></li>
+                <li><a href="../2--Products/products.html">Shop</a></li>
+                <li><a href="../7--Contact/contact.html">Contact</a></li>
+                <li><a href="../6--Reviews/reviews.html">Reviews</a></li>
+                <li><a href="../8--Pricing/pricing.html" class="active">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="../4--Login--5/login.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+            <a href="../2--Products/products.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        
+    
+    </header>
+
+    <section class="parent">
+        <div class="price">
+            <div class="price1">
+                <h1>STANDARD</h1>
+                <p>Lorem ipsum dolor</p>
+                <p class="prix">
+                    <span>$30</span> <br> /Month
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>5 Products</li>
+                    <li><i class="fa-solid fa-check"></i>Up to 1,000 Subscriber</li>
+                    <li><i class="fa-solid fa-check"></i>Basic Analytics</li>
+                    <li><i class="fa-solid fa-check"></i>48-Hour Support Response Time</li>
+                    <li><i class="fa-solid fa-xmark" style="color: #c7001e;"></i>No Markting Animations</li>
+                </ul>
+                <a href=""><button>Get Standard</button></a>
+            </div>
+            
+        </div>
+        <div class="price">
+            <div class="price2">
+                <h1>PREMIUM</h1>
+                <p>Lorem ipsum dolor</p>
+                <p class="prix">
+                    <span>$50</span> <br> /Month
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>25 Products</li>
+                    <li><i class="fa-solid fa-check"></i>Up to 10,000 Subscriber</li>
+                    <li><i class="fa-solid fa-check"></i>Advanced Analytics</li>
+                    <li><i class="fa-solid fa-check"></i>24-Hour Support Response Time</li>
+                    <li><i class="fa-solid fa-check"></i>Markting Animations</li>
+                </ul>
+                <a href=""><button>Get PREMIUM</button></a>
+            </div>
+        </div>
+        <div class="price">
+            <div class="price1">
+                <h1>ULTIMATE</h1>
+                <p>Lorem ipsum dolor</p>
+                <p class="prix">
+                    <span>$80</span> <br> /Month
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Unlimited Products</li>
+                    <li><i class="fa-solid fa-check"></i>Unlimited Subscriber</li>
+                    <li><i class="fa-solid fa-check"></i>Advanced Analytics</li>
+                    <li><i class="fa-solid fa-check"></i>One-hour Support Response Time</li>
+                    <li><i class="fa-solid fa-check"></i>Markting Animations</li>
+                </ul>
+                <a href=""><button>Get ULTIMATE</button></a>
+            </div>
+            
+        </div>
+    </section>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url(Asset\ 8-100.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 50px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #fff;
+}
+
+a.logo {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+}
+
+.active::after {
+    content: '';
+    height: 3px;
+    background: rgb(238,56,219);
+    background: linear-gradient( to right, rgba(238,56,219,1) 0%, rgba(80,228,255,1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+}
+
+nav ul li a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(238,56,219);
+    background: linear-gradient( to right, rgba(238,56,219,1) 0%, rgba(80,228,255,1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+header i {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+header i {
+    margin: 8px;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+i:hover {
+    color: rgb(238,56,219);
+    color: linear-gradient( circle, rgba(238,56,219,1) 0%, rgba(80,228,255,1) 100%);
+}
+
+
+
+.container {
+    margin-top: 40px;
+
+}
+
+section.parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+.icons {
+    font-size: 10px;
+    display: inline-flex;
+}
+
+article {
+    border: transparent;
+    border-radius: 15px;
+    margin: 20px 40px;
+    width: 240px;
+    height: fit-content;
+    text-align: center;
+    background-color: white;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+p.description {
+    font-size: 12px;
+}
+
+article img {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+article img:hover {
+    cursor: pointer;
+    opacity: 0.90;
+}
+
+article h3, p.description {
+    padding: 5px;
+}
+
+article button {
+    padding: 5px;
+    margin: 10px 3px;
+    border-radius: 18px;
+    background-color: #00b5d5;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.911);
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+article button:hover {
+    background-color: #0080d5;
+    transform: scale(1.1);
+    color: white;
+}
+
+article i {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+@media (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 952px) {
+
+    .container {
+        margin: 10% 3%;
+    }
+
+    .container h1{
+        font-size: 35px;
+    }
+
+    .container p {
+        font-size: 12px;
+        max-width: 450px;
+    }
+
+    a.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    i.fa-bars, #check {
+        display: block;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+        font-weight: bold;
+        
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        background: black;
+        border: 2px solid #fff;
+        transition: .5s;
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav.active {
+        height: 500px;
+        backdrop-filter: blur(20px);
+    }
+
+    nav.active ul li {
+        opacity: 1;
+    }
+
+    nav ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 12px;
+        opacity: 0;
+        margin: 30px 0;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .container p {
+        font-size: 12px;
+        max-width: 330px;
+    }
+
+}
